@@ -1,0 +1,43 @@
+.PopUp {
+    .container {
+
+        width: 50%;
+
+        .top-div{
+            height: 60rem;
+            background-color: skyblue;
+        }
+        p{
+            line-height: 1rem;
+        }
+        .hover-container {
+            position: relative;
+        }
+        .hover-content {
+            // position: absolute;
+
+            border: 1px solid black;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            width: fit-content;
+            padding: .5rem;
+            cursor: pointer;
+        }
+
+        .popup-content {
+            position: absolute;
+        }
+
+        .upper {
+            left: 0;
+            bottom: 40px;
+        }
+
+        .lower {
+            left: 0;
+            top: 40px;
+        }
+    }
+}

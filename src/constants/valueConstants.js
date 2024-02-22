@@ -1,0 +1,1 @@
+export const INITIAL_PNR_VALUE = 9876543210;

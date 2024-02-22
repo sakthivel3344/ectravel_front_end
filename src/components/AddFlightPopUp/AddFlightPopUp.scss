@@ -1,0 +1,86 @@
+@import "../../assets/styles/globalMixin";
+
+.AddFlightPopUp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  .form-container {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 55rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .add-train-form {
+    display: flex;
+    gap: 1rem;
+    padding-top: 0.5rem;
+    .form-left-side,
+    .form-right-side {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  .input-box-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    .input-box {
+      width: 15rem;
+      font-size: 1rem;
+      padding: 0.4rem;
+    }
+    .radio-input {
+      display: flex;
+      gap: 0.3rem;
+      width: 15rem;
+      padding: 0.5rem 0;
+    }
+    .first-label {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .visible {
+    visibility: visible;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+  // .submit-btn {
+  //   @include admin-submit-btn;
+  //   width: fit-content;
+  //   margin-top: 0.5rem;
+  //   align-self: flex-end;
+  // }
+  // .submit-btn:hover {
+  //   @include admin-submit-btn-hover;
+  // }
+  .flight-submit-btn {
+    margin-top: 0.5rem;
+    align-self: flex-end;
+  }
+  .close-icon {
+    cursor: pointer;
+  }
+}

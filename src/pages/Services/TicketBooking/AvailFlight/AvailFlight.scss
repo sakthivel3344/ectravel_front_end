@@ -1,0 +1,156 @@
+@import "../../../../assets/styles/globalConstants";
+
+.AvailFlight {
+  margin-top: 4rem;
+  background-color: $global-bg-color;
+  min-height: calc(100vh - 4rem);
+  .navbar-container {
+    background-color: $booking-navBar-bg;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 4rem;
+    z-index: 5;
+    .basic-details {
+      font-size: 1rem;
+    }
+  }
+
+  .navbar-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    color: white;
+  }
+
+  .avail-flight-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .filter-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0 0.5rem 1rem;
+  }
+  .filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 27rem;
+    position: sticky;
+    top: 7.5rem;
+    height: fit-content;
+    .filter-content {
+      background-color: white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      border-radius: 5px;
+    }
+    .filter-option-wrapper {
+      display: flex;
+      gap: 0.5rem;
+      padding: 0.5rem 0 0 1rem;
+    }
+    .filter-option-wrapper:last-child {
+      margin-bottom: 0.5rem;
+    }
+
+    .time-filter-content {
+      display: flex;
+      gap: 0.5rem;
+      padding: 1rem 0.5rem;
+    }
+
+    .time-filter-option {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+      padding: 0.7rem 0.2rem;
+      width: calc(100% / 4);
+      cursor: pointer;
+    }
+    .time-filter-option:hover {
+      border-color: $primary-color;
+      background-color: $secondary-color;
+    }
+    .selected-time-filter {
+      border-color: $primary-color;
+      background-color: $secondary-color;
+    }
+    .time-filter-option-text {
+      font-size: 0.7rem;
+    }
+    .option-icon {
+      font-size: 1.3rem;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    .airline-filter-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+
+      .airline-option {
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+
+    .price-range-filter {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .price-sort-content {
+      display: flex;
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+    .price-sort-option {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 0.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .price-sort-option:hover {
+      border-color: $primary-color;
+      background-color: $secondary-color;
+    }
+    .selected-price-sort-option {
+      border-color: $primary-color;
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+
+    .price-range-filter-content {
+      padding: 0.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      .min-max-price-container {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .fildered-flight-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+}

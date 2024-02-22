@@ -1,0 +1,362 @@
+@import "../../assets/styles/globalConstants";
+.BusDetails {
+  width: 100%;
+  height: fit-content;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid transparent;
+  /* cursor: pointer; */
+}
+.bus-details-top-container {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.BusDetails:hover,
+.active-bus {
+  border: 1px solid $primary-color;
+}
+.BusDetails .bus-details-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.BusDetails .bus-details-top .top-flex-1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+.BusDetails .bus-details-top .top-flex-1 .bus-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.BusDetails .bus-details-top .top-flex-1 .center-wrapper {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  /* justify-self: center; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.BusDetails .bus-details-top .top-flex-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.BusDetails .bus-details-top .top-flex-2 .flex-right {
+  display: flex;
+  gap: 1rem;
+}
+.BusDetails .bus-details-bottom {
+  display: flex;
+  justify-content: end;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem;
+}
+.BusDetails .bus-details-bottom button {
+  padding: 0.2rem 0.5rem;
+}
+
+.bg-color {
+  background-color: #f1fbf7;
+}
+
+/* ---------------------------- select-seat-container ------------------------ */
+
+.BusDetails .bus-details-bottom-container {
+  height: 42rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.visible-bus-details {
+  display: flex !important;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* display: flex !important; */
+  /* animation: smooth-dropdown 2s ease-in-out; */
+}
+.BusDetails .bus-details-bottom-flex-1 {
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+.BusDetails .bus-details-bottom-flex-1,
+.BusDetails .bus-details-bottom-flex-2 {
+  flex: 1;
+}
+.BusDetails .bus-details-bottom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  padding: 0 1rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  font-size: 14px;
+}
+
+.BusDetails .bus-details-bottom-content-1 {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 2rem);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+}
+.BusDetails .bus-layout-container {
+  width: 15rem;
+  height: 36rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.BusDetails .bus-layout-top-flex {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+.BusDetails .bus-layout-top-flex span,
+.sleeper-bus-layout-1-header span {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.BusDetails .bus-layout-bottom-flex {
+  width: 100%;
+  height: 33rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.BusDetails .bus-layout-bottom-flex-1,
+.BusDetails .bus-layout-bottom-flex-2 {
+  width: 7rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 33rem;
+  padding: 0 1rem;
+}
+
+.BusDetails .bus-layout-bottom-flex-1 .seat,
+.BusDetails .bus-layout-bottom-flex-2 .seat {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.BusDetails .bus-layout-bottom-flex-1 .seat:hover,
+.BusDetails .bus-layout-bottom-flex-2 .seat:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+.BusDetails .bus-layout-bottom-flex-1 .seat.selected-seat,
+.BusDetails .bus-layout-bottom-flex-2 .seat.selected-seat {
+  color: $primary-color;
+}
+.BusDetails .bus-layout-bottom-flex-1 .booked-bus-seat,
+.BusDetails .bus-layout-bottom-flex-2 .booked-bus-seat,
+.BusDetails .bus-layout-bottom-flex-1 .booked-bus-seat:hover,
+.BusDetails .bus-layout-bottom-flex-2 .booked-bus-seat:hover {
+  color: rgba(0,0,0,0.2);
+  cursor: not-allowed;
+}
+/* Pick Up & Drop */
+
+.BusDetails .bus-details-bottom-content-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.bus-details-bottom-content-2-top-flex {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 1rem;
+  padding: 1rem;
+  height: 30rem;
+  /* padding: 1rem; */
+  /*  */
+}
+
+.bus-details-bottom-content-2-top-flex-1,
+.bus-details-bottom-content-2-top-flex-2 {
+  flex: 1;
+  height: 30rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.bus-details-bottom-content-2-top-flex-1-header,
+.bus-details-bottom-content-2-top-flex-2-header {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  padding: 0 1rem;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.bus-details-bottom-content-2-top-flex-1,
+.bus-details-bottom-content-2-top-flex-2 {
+  height: 100%;
+}
+.bus-details-bottom-content-2-top-flex-1-content .pick-up,
+.bus-details-bottom-content-2-top-flex-2-content .drop {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  cursor: pointer;
+}
+.bus-details-bottom-content-2-top-flex-1-content .pick-up:hover,
+.bus-details-bottom-content-2-top-flex-2-content .drop:hover {
+  background-color: #f1fbf7;
+}
+.bus-details-bottom-content-2-top-flex-1-content .pick-up span,
+.bus-details-bottom-content-2-top-flex-2-content .drop span {
+  color: $primary-color;
+}
+.bus-details-bottom-content-2-bottom-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  height: 10rem;
+  padding: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.bus-details-bottom-content-2-bottom-flex-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bus-details-bottom-content-2-bottom-flex-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.bus-details-bottom-content-2-bottom-flex-left h5 {
+  font-size: 16px;
+}
+
+.continue-btn {
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(208, 204, 204);
+}
+
+.active-btn {
+  background-color: $primary-color;
+}
+
+.active-btn:hover {
+  background-color: $hover-color;
+}
+
+@keyframes smooth-dropdown {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+.sleeper-bus-layout-1,
+.sleeper-bus-layout-2 {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  max-width: 12rem;
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+}
+.sleeper-bus-layout-1-header,
+.sleeper-bus-layout-2-header {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+.sleeper-bus-layout-1-content,
+.sleeper-bus-layout-2-content {
+  height: calc(100% - 2rem);
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.sleeper-bus-layout-1-content-1,
+.sleeper-bus-layout-2-content-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  flex-wrap: wrap;
+  /* border: 1px solid; */
+}
+.sleeper-bus-layout-1-content-2,
+.sleeper-bus-layout-2-content-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sleeper-bus-layout-1-content-2,
+.sleeper-bus-layout-2-content-2 {
+  gap: 0.5rem;
+}
+.sleeper-icon-layout {
+  /* font-size: 4rem; */
+  display: inline-block;
+  width: 1.8rem;
+  height: 5rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.sleeper-icon-layout span {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  width: 80%;
+  height: 0.5rem;
+  margin: 10%;
+  border-radius: 3px;
+}
+.sleeper-icon-layout:hover,
+.sleeper-icon-layout:hover span {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.selected-sleeper-seat {
+  border-color: $primary-color !important;
+  background-color: $secondary-color !important;
+}
+
+.selected-sleeper-seat span {
+  border-color: $primary-color !important;
+}
+.booked-bus-sleeper-seat,
+.booked-bus-sleeper-seat:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.1);
+  span {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  cursor: not-allowed;
+  // border: 1px solid red;
+  // color: red;
+  // background-color: red;
+}

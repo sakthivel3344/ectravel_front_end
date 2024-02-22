@@ -1,0 +1,108 @@
+@import "../../assets/styles/globalConstants";
+
+.FlightDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  .view-details-container {
+    // height: 20rem;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .details-wrapper {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    .from-to {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      padding: 0.5rem;
+      font-weight: bold;
+    }
+  }
+  .hr-line {
+    width: 100%;
+    margin: 0.5rem auto;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}
+.flight-details-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 5px;
+  z-index: 3;
+  .flight-details-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .flight-name {
+    font-weight: bold;
+    font-size: 1.4rem;
+    max-width: 7rem;
+    width: 100%;
+  }
+  .flight-details-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+    .avail-count-wrapper {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+  .view-details-text {
+    cursor: pointer;
+  }
+  .view-details-text:hover {
+    color: $primary-color;
+  }
+  .book-now-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+  .book-btn {
+    height: fit-content;
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+    border: none;
+    background-color: $primary-color;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+  }
+  .book-btn:hover {
+    background-color: $hover-color;
+  }
+  .price-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .price,
+  .time {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .active {
+    color: $primary-color;
+  }
+  .duration-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../assets/styles/globalConstants";
+.TrainSeatDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  height: fit-content;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  min-width: calc((100% / 3) - 1.5rem);
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  .seat-details-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .seat-details-top-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .seat-name-text {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .avail-count {
+    color: $primary-color;
+  }
+  .free-text {
+    font-size: 0.9rem;
+  }
+}
+
+.not-available {
+  opacity: 0.5;
+  cursor: not-allowed;
+
+  .avail-count {
+    color: rgb(255, 85, 0);
+  }
+}

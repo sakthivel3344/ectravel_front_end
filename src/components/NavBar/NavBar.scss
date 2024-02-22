@@ -1,0 +1,68 @@
+@import "../../assets/styles/globalConstants";
+.NavBar {
+  width: 100%;
+  height: 4rem;
+  box-shadow: 0 0 10px grey;
+  background-color: $secondary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  left: 0;
+}
+.NavBar .nav-content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: bold;
+  align-items: center;
+  margin: auto;
+}
+.NavBar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+.NavBar .nav-links .nav-link {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 2rem;
+  border-radius: 3px;
+  width: fit-content;
+}
+.NavBar .nav-links .nav-link:hover,
+.NavBar .nav-links .nav-link.active {
+  color: white;
+  background-color: $primary-color;
+}
+
+.NavBar .sign-in-btn {
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(226, 222, 222);
+}
+.NavBar .sign-in-btn:hover {
+  color: black !important;
+  background-color: rgb(226, 222, 222) !important;
+}
+
+.NavBar .profile-nav-link-wrapper {
+  position: relative;
+}
+.NavBar .profile-pic {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  height: 2rem;
+  cursor: pointer;
+}

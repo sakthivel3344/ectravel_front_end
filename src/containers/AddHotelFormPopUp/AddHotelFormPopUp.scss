@@ -1,0 +1,33 @@
+.AddHotelFormPopUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hotel-form-container {
+        background-color: white;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+
+    .form-head-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    .close-icon {
+        cursor: pointer;
+    }
+    .form-content-container {
+        width: 40rem;
+    }
+    .input-box-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}

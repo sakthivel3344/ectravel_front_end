@@ -1,0 +1,46 @@
+@import "../../assets/styles/globalConstants";
+.TrainStationDropDown {
+    position: relative;
+    .drop-down-content {
+        border-radius: 5px;
+        border: 1px solid rgba(0,0,0,0.3);
+        padding: .2rem .2rem .2rem .5rem;
+        min-width: 20rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        height: 2.3rem;
+        justify-content: space-between;
+        cursor: pointer;
+        .wrapper {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .change-text {
+            color: $primary-color;
+            // font-weight: bold;
+        }
+    }
+}
+
+.drop-down-list-container {
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+    .station-item {
+        padding: .5rem;
+        cursor: pointer;
+    }
+    .station-item:hover{
+        background-color: rgba(0,0,0,0.1);
+    }
+}

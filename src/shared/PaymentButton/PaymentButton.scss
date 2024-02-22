@@ -1,0 +1,17 @@
+@import "../../assets/styles/globalConstants";
+
+.PaymentButton {
+    width: 100%;
+    padding: 0.8rem;
+    cursor: pointer;
+    border: none;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 5px;
+    font-size: .9rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .PaymentButton:hover {
+    background-color: $hover-color;
+  }

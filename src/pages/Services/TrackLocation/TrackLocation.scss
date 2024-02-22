@@ -1,0 +1,13 @@
+.TrackLocation{
+    width: 100%;
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+#mapid{
+    width: 100%;
+    z-index: 0;
+}

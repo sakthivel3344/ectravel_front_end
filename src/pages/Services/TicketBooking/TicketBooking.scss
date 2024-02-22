@@ -1,0 +1,228 @@
+@import "../../../assets/styles/globalConstants";
+.TicketBooking {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  background-color: $global-bg-color;
+}
+.search-bg {
+  padding-bottom: 10rem;
+  background: rgb(106, 203, 228);
+  background: linear-gradient(0deg, #6acbe4 0%, #51d7b2 71%);
+
+  /* background: rgb(42,195,233);
+background: linear-gradient(0deg, rgba(42,195,233,1) 0%, rgba(25,228,147,1) 100%); */
+  /* #2bf2ca */
+}
+.ticketbooking-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ticketbooking-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12rem;
+}
+
+.TicketBooking .search-container {
+  width: 100%;
+  height: 20rem;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem 1rem 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.search-content {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-input-wrapper {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+}
+.search-input-wrapper .input-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+  padding: 1rem;
+}
+.search-input-wrapper .input-box-wrapper label {
+  font-size: 1.2rem;
+}
+.search-input-wrapper .input-box-wrapper input {
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+.TicketBooking .nav-links {
+  display: flex;
+  height: fit-content;
+  gap: 3rem;
+  position: absolute;
+  top: -25%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: $secondary-color;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.TicketBooking .nav-links .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.TicketBooking .nav-links .nav-item.active-vehicle::after,
+.TicketBooking .nav-links .nav-item.active-vehicle::after {
+  width: 50%;
+  height: 3px;
+  background-color: $primary-color;
+  content: "";
+  position: absolute;
+  bottom: -8px;
+}
+
+.TicketBooking .nav-links .nav-item:hover span,
+.TicketBooking .nav-links .nav-item:hover p {
+  color: grey;
+}
+.TicketBooking .nav-links .nav-item.active-vehicle span {
+  color: $primary-color;
+}
+.TicketBooking .nav-links .nav-item.active-vehicle p {
+  color: $primary-color;
+  font-weight: bold;
+}
+.TicketBooking .nav-links .nav-item span {
+  font-size: 2.5rem;
+}
+
+.TicketBooking .nav-links .nav-item p {
+  font-size: 14px;
+}
+
+.search-btn {
+  position: absolute;
+  height: 3rem;
+  width: 15rem;
+  border: none;
+  border-radius: 1.5rem;
+  bottom: -1.5rem;
+  background-color: $primary-color;
+  background-color: #2ac386;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 3px 3px 5px rgb(57, 159, 196);
+  /* background: rgb(42,195,233); */
+  /* background: linear-gradient(90deg, rgb(42, 195, 233) 0%, rgba(25,228,147,1) 100%); */
+}
+
+.search-btn:hover {
+  background-color: rgb(79, 196, 149);
+}
+
+/* Slider */
+
+.offers {
+  width: 100%;
+  height: 7rem;
+  position: absolute;
+  bottom: -13.3rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.offers-wrapper {
+  padding: 10px;
+  height: 7rem;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: white;
+  border-radius: 5px;
+}
+.offers .offers-slide-wrapper {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: inline-block;
+  transition: 1s;
+}
+.offers .offers-slide-wrapper .offers-slides {
+  width: calc(100% / 3);
+  height: 100%;
+  padding: 5px 10px;
+  display: inline-block;
+}
+.offers .offers-slide-wrapper .offers-slides div:nth-child(1) {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 100%;
+  padding: 5px;
+}
+.offers .offers-slide-wrapper .offers-slides div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.offers .offers-slide-wrapper .offers-slides img {
+  height: 100%;
+  border-radius: 5px;
+}
+.offers span {
+  cursor: pointer;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  z-index: 10;
+}
+
+.offers .prev-btn {
+  left: -18px;
+  background-color: white;
+}
+
+.offers .next-btn {
+  right: -18px;
+  background-color: white;
+}
+
+/* Search Details */

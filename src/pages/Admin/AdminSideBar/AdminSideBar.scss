@@ -1,0 +1,52 @@
+.AdminSideBar {
+    height: 100vh;
+    width: 20rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(51, 49, 49);
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.AdminSideBar .logo {
+    padding: 1rem;
+    cursor: pointer;
+}
+.admin-sidebar-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.admin-sidebar-item-wrapper .admin-sidebar-item {
+    padding: 1rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bg-black {
+    background-color: black;
+}
+.admin-sidebar-item-wrapper .admin-sidebar-item:hover {
+    background-color: black;
+}
+.admin-sidebar-manage-booking-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: rgb(32, 32, 32);
+}
+.dropdown-visible {
+    background-color: rgb(32, 32, 32);
+}
+.admin-sidebar-manage-booking-item-wrapper li {
+    padding: 1rem;
+    cursor: pointer;
+}
+.admin-sidebar-manage-booking-item-wrapper li:hover,
+.admin-sidebar-manage-booking-item-wrapper li.active-manage-booking {
+    background-color: rgb(113, 111, 111);
+}

@@ -1,0 +1,62 @@
+.FlightOtherDetails {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  .flight-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    // gap: 4rem;
+  }
+
+  .container-1,
+  .container-2 {
+    display: flex;
+    max-width: 20rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .time {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .detail-title {
+    font-weight: bold;
+  }
+
+  .container-2 {
+    margin-right: 4rem;
+  }
+  .container-2 .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .duration-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+  }
+  .detail-wrapper:nth-child(1){
+    align-items: start;
+  }
+
+  .full-date {
+    font-size: .9rem;
+    margin-bottom: .5rem;
+  }
+}

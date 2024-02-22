@@ -1,0 +1,179 @@
+@import "../../../../assets/styles/globalConstants";
+
+.FlightBooking {
+  margin-top: 4rem;
+  background-color: $global-bg-color;
+  min-height: calc(100vh - 4rem);
+  .navbar {
+    width: 100%;
+    background-color: $booking-navBar-bg;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+
+  .flight-booking-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 1rem;
+    .flight-content-1 {
+      //   border: 1px solid green;
+      // padding: 1rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .flight-detail {
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        padding: 1rem;
+      }
+      .flight-detail-1 {
+        // border-radius: 5px;
+        // .flight-detail-1-border-wrapper {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        gap: 0.5rem;
+
+        .wrapper-1 {
+          display: flex;
+          justify-content: space-between;
+          .wrapper-1-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+          }
+          .from-to-title {
+            font-weight: bold;
+            font-size: 1.4rem;
+          }
+        }
+        // }
+      }
+      .flight-detail-2,
+      .flight-detail-3 {
+        .input-box-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+        .traveller-form-wrapper {
+          display: flex;
+          gap: 1rem;
+          margin-top: 1rem;
+          flex-wrap: wrap;
+        }
+
+        .gender-selector {
+          display: flex;
+
+          .gender-option {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5rem;
+            padding: 0.5rem;
+            cursor: pointer;
+          }
+
+          .gender-option-1 {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
+
+          .gender-option-2 {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+
+          .selected-gender {
+            border-color: $primary-color;
+            background-color: $secondary-color;
+            position: relative;
+          }
+          .selected-gender::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+    .flight-content-2 {
+      max-width: 24rem;
+      width: 100%;
+      height: fit-content;
+      //   border: 1px solid red;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      .price-detail {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .price-detail-2 {
+        padding-top: 0;
+      }
+      .price-label {
+        // font-weight: bold;
+        font-weight: 0.9rem;
+      }
+      .price-text {
+        color: rgba(0, 0, 0, 0.9);
+        // width: 5rem;
+        // border: 1px solid;
+      }
+
+      .price-detail-1 {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .price-detail-4 {
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      .flight-pay-now-btn {
+        margin: 0 1rem;
+        // max-width: 22rem;
+        // width: 22rem;
+        width: calc(100% - 2rem);
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .classDropDown {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: fit-content;
+    // align-self: flex-end;
+    width: 10rem;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    height: 2.2rem;
+    display: flex;
+    margin-top: .1rem;
+  }
+}

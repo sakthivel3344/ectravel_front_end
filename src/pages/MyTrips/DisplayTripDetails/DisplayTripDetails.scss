@@ -1,0 +1,68 @@
+.DisplayTripDetails {
+  //   border: 1px solid black;
+  //   height: 10rem;
+  box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.07),
+    0 1px 5px 0 rgba(74, 74, 74, 0.2), 0 2px 2px 0 rgba(74, 74, 74, 0.2);
+
+  .from-to-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container-1 {
+    position: relative;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    .content-1 {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .view-booking-btn {
+      height: fit-content;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+
+    .icon-container {
+      position: absolute;
+      // border: 1px solid red;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: -1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .container-2 {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem 3rem;
+    // box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+
+    .content-1,
+    .content-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .date-text {
+      font-weight: bold;
+    }
+  }
+}

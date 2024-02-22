@@ -1,0 +1,34 @@
+.DropDown {
+  position: relative;
+  .drop-down-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .drop-down-list-wrapper {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    top: 2.7rem;
+    left: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 18;
+  }
+  .drop-down-item {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: .5rem;
+    cursor: pointer;
+  }
+  .drop-down-item:hover {
+    background-color: rgba(0,0,0,0.1);
+  }
+}

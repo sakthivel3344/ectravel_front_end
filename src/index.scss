@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #00b894;
+  --secondary-color: #e6fbf4;
+  --tertiary-color: #464e47;
+  --hover-color: #39c49c;
+  --busBooking-navBar-bg: #02b280;
+  --global-bg-color: rgb(242, 242, 242);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}

@@ -1,0 +1,51 @@
+@import "../../../assets/styles/globalConstants";
+
+.ServicesDropDown {
+  position: absolute;
+  top: 2rem;
+  left: -30%;
+  color: black;
+  animation: dropdown-anime 0.3s ease-in-out;
+  /* transition: all 0.4s ease; */
+}
+
+.ServicesDropDown .dropdown-content {
+  width: 130%;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.dropdown-content .service-wrapper {
+  list-style: none;
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px grey;
+}
+.dropdown-content .service-wrapper .service-link {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.dropdown-content .service-wrapper .service-link:hover {
+  background-color: $hover-color;
+  color: white;
+}
+
+.active-service {
+  background-color: $primary-color;
+  color: white;
+}
+
+@keyframes dropdown-anime {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
